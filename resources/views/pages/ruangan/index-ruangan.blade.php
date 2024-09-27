@@ -38,10 +38,6 @@
                     <i class="fas fa-print"></i>
                 </a>
 
-                <a href="{{ route('admin.ruangan.print')}}" class="btn btn-outline-success float-left"> 
-                    <i class="fas fa-print"></i>Report
-                </a>
-
                 <!-- Modal Tambah Data-->
                 <div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-labelledby="tambahModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">

@@ -44,7 +44,7 @@
             <div class="small-box bg-primary">
               <div class="inner">
                 <h3>{{$elektronikRusak}} Unit</h3>
-                <p>Total Barang Elektronik Rusak</p>
+                <p>Total Peralatan / Elektronik / Mesin Rusak</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>

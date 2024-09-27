@@ -123,7 +123,7 @@
               <li class="nav-item">
                 <a href="{{ route('admin.elektronik.index')}}" class="nav-link">
                   <i class="nav-icon fas fa-bolt"></i>
-                  <p>Elektronik</p>
+                  <p>Alat/Elektronik/Mesin</p>
                 </a>
               </li>
               <li class="nav-item">
