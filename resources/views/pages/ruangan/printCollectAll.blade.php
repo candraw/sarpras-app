@@ -9,6 +9,7 @@
     <h1>Barang Inventaris - {{ $ruangan->nama_a }}</h1>
     <hr>
     <!-- Elektronik -->
+    @if($barangElektronik->isNotEmpty())
     <table border="1" cellspacing="0" cellpadding="3">
         <thead>
             <h2>Elektronik</h2>
@@ -47,8 +48,10 @@
         @endforeach
         </tbody>
     </table>
-
+    @endif
+    
     <!-- Mebeulair -->
+    @if($barangMebeulair->isNotEmpty())
     <table border="1" cellspacing="0" cellpadding="3">
         <thead>
         <h2>Mebeulair</h2>
@@ -82,8 +85,11 @@
             <!-- Tambahkan data lainnya di sini -->
         @endforeach
         </tbody>
-    </table>    
+    </table>  
+    @endif
+      
     <!-- Praktik -->
+    @if($barangPraktik->isNotEmpty())
     <table border="1" cellspacing="0" cellpadding="3">
         <thead>
         <h2>Praktik</h2>
@@ -116,9 +122,9 @@
                 <td>{{ $praktik->ruangan->nama_a ?? '-'  }}</td>
                 <td>{{ $praktik->ket_d }}</td>
             </tr>
-            <!-- Tambahkan data lainnya di sini -->
         @endforeach
         </tbody>
     </table>
+    @endif
 </body>
 </html>
