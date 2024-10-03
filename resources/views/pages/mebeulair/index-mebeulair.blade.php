@@ -192,7 +192,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Form tambah data ruangan -->
+                <!-- Form edit data -->
                 <form action="{{ route('admin.mebeulair.update', $mebeulair->id) }}" method="POST">
                     @csrf
                     @method('PUT')
@@ -231,7 +231,7 @@
                           <select id="ruangan_c" name="ruangan_c" class="form-control" required>
                               <option value="">Pilih Ruangan</option>
                               @foreach($ruangans as $id => $namaRuangan)
-                              <option value="{{ $id }}" {{ $mebeulair->ruangan_id == $id ? 'selected' : '' }}>{{ $namaRuangan }}</option>
+                              <option value="{{ $id }}" {{ $mebeulair->ruangan_c == $id ? 'selected' : '' }}>{{ $namaRuangan }}</option>
                               @endforeach   
                           </select>
                       </div>

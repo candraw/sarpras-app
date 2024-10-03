@@ -254,7 +254,7 @@
                           <select id="ruangan_d" name="ruangan_d" class="form-control" value="{{ $praktik->ruangan->nama_a ?? '-'}}" required>
                               <option value="">Pilih Ruangan</option>
                               @foreach($ruangans as $id => $namaRuangan)
-                              <option value="{{ $id }}" {{ $praktik->ruangan_id == $id ? 'selected' : '' }}>{{ $namaRuangan }}</option>
+                              <option value="{{ $id }}" {{ $praktik->ruangan_d == $id ? 'selected' : '' }}>{{ $namaRuangan }}</option>
                               @endforeach   
                           </select>
                       </div>

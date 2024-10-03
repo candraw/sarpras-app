@@ -49,7 +49,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <!-- Form tambah data ruangan -->
+                                <!-- Form tambah data -->
                                 <form action="{{ route('admin.elektronik.store') }}" method="POST">
                                     @csrf
                                     <div class="form-row">
@@ -270,7 +270,7 @@
                           <select id="ruangan_b" name="ruangan_b" class="form-control" required>
                               <option value="">Pilih Ruangan</option>
                               @foreach($ruangans as $id => $namaRuangan)
-                              <option value="{{ $id }}" {{ $elektronik->ruangan_id == $id ? 'selected' : '' }}>{{ $namaRuangan }}</option>
+                              <option value="{{ $id }}" {{ $elektronik->ruangan_b == $id ? 'selected' : '' }}>{{ $namaRuangan }}</option>
                               @endforeach   
                           </select>
                       </div>
